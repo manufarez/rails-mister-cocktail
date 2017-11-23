@@ -5,6 +5,7 @@ class CocktailsController < ApplicationController
 
   def show          # GET /cocktails/:id
     @cocktail = Cocktail.find(params[:id])
+    @dose = Dose.new
     # @review = Review.new
   end
 
@@ -13,7 +14,7 @@ class CocktailsController < ApplicationController
   end
 
   def create        # POST /cocktails
-    @cocktail = Cocktail.new
+    @cocktail = Cocktail.new(cocktail_params)
     @cocktail.save
 
     # no need for app/views/cocktails/create.html.erb

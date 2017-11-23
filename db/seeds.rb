@@ -14,3 +14,6 @@ ingredients = JSON.parse(open(url).read)
 ingredients["drinks"].each do | ingredient |
   Ingredient.create(name: ingredient["strIngredient1"] )
 end
+
+Cocktail.create(name: "Martini")
+Cocktail.create(name: "Bloody Mary")
