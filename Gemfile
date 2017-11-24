@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem 'bootstrap-sass'
 
+ruby '2.3.5'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
